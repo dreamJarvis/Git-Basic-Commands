@@ -1,0 +1,42 @@
+------------------------------ creating a repo. in the local system --------------------------
+
+$ git init
+        The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
+
+Adding user name and email address to git :
+        $ git config --global user.name 'user name'
+        $ git config --global user.email 'user email'
+
+Adding the files in the repository to git :
+        $ git add file.type
+        
+To check what is in the staging area ( where files are kept before they are committed to repository ) 
+i.e. which files are unchecked aor not committed not added to the staging area,
+and also if any changes are done to the already staged file in the directory,
+and tells us to add it to the file
+        $ git status
+        
+To remove a file from staging area:
+        $ git rm --cached file.type
+        
+To add multiple files of same type:
+        $ git add .*html
+        
+To add every file in the repository:
+        $ git add .
+        
+To commit all the files in the staging state
+        $ git commit -m "comment to add to the commit"
+        
+        
+".gitignore file"
+To exclude files and folder from our repository create a '.gitignore file' and write the file names to the .gitignore to exclude that file fromm our repository
+
+Any changes done to the brach will not be inflicted to the master branch until it is merged to the master branch
+To create a branch :
+        $ git brach "brach_name"
+        
+To switch to brach :
+        $ git checkout "branch name"
+        
+

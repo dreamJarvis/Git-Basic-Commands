@@ -1,0 +1,9 @@
+--------------------------- problem : updates rejected when pushing to github ---------------------------------
+commands to follow : 
+        1. pull the files currently existing in the repo and add it to the current directory , which we are trying  to merge :
+                $ git pull origin master (it will give error)
+                
+                $ git pull origin master --allow-unrelated-history
+                
+        2. run command : 
+                $ git push origin master
